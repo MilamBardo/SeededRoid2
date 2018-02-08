@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainConstraint"
+    tools:context="com.example.talanath.seededroid2.ImageSeedTakePhotoActivity">
+
+
+        <!--&lt;!&ndash; Camera Preview &ndash;&gt;-->
+        <!--<SurfaceView-->
+            <!--android:id="@+id/camera_preview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--&lt;!&ndash; /End Camera Preview &ndash;&gt;-->
+
+
+
+            <!-- Put your Content Here -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+                    <ImageView
+                        android:id="@+id/imgPhoto"
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        />
+                    <!--<View-->
+                        <!--android:id="@+id/overlay"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:background="#AAFF0000"-->
+                        <!--app:layout_constraintBottom_toBottomOf="@+id/imgPhoto"-->
+                        <!--app:layout_constraintLeft_toLeftOf="@+id/imgPhoto"-->
+                        <!--app:layout_constraintRight_toRightOf="@+id/imgPhoto"-->
+                        <!--app:layout_constraintTop_toTopOf="@+id/imgPhoto"-->
+                        <!--/>-->
+
+
+
+                <EditText
+                    android:id="@+id/txtTags"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:hint="Add Tags"
+                    />
+
+                <Button
+                    android:id="@+id/btnSavePhoto"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Save Photo"
+                    />
+                <Button
+                    android:id="@+id/btnTakePhoto"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Open Camera"
+                    />
+
+            </LinearLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/overlay"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="#FFFF00"-->
+        <!--android:elevation="2dp"-->
+
+    <!--/>-->
+    <!--android:layout_marginTop="980px"-->
+        <!-- /End Overlay -->
+
+
+
+</android.support.constraint.ConstraintLayout>

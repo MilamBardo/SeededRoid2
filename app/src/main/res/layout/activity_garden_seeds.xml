@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.talanath.seededroid2.GardenSeedsActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txtGardenName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:text="Garden Name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNewSeeds"
+        app:layout_constraintEnd_toEndOf="@+id/txtNewSeeds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNewSeeds"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="New Seeds"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/grdNewSeeds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGardenName" />
+
+    <GridView
+        android:id="@+id/grdNewSeeds"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewSeeds"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="109dp">
+
+    </GridView>
+
+
+</android.support.constraint.ConstraintLayout>

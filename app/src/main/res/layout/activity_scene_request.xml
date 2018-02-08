@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.talanath.seededroid2.SceneRequestActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+        android:orientation="horizontal"
+        android:background="@drawable/border_custom_roundedcorner10"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Scene Request Title:"/>
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Title"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layRequestImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = "4"
+            android:orientation="horizontal"
+            android:background="@drawable/border_custom_roundedcorner10"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight = "4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        >S
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Image Request:"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please add your Request description here for the type of Scene Images you would like to receive"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/txtImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border_custom_roundedcorner10"
+                        />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRequestInk"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = "4"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight = "4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Ink Request:"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please outline a description of the Scene Text you wish to receive"/>
+
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/txtInk"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_custom_roundedcorner10"
+                        />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = "0.5"
+            ></View>
+        <LinearLayout
+            android:id="@+id/layButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = "2"
+            android:orientation="horizontal"
+            android:background="@drawable/border_custom_roundedcorner10"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1" />
+            <ImageView
+                android:id="@+id/imgImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "2"
+                android:src="@drawable/square_camera"
+                android:padding="3dp"
+
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "0.5" />
+            <ImageView
+                android:id="@+id/imgInk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "2"
+                android:src="@drawable/square_feather"
+                android:padding="3dp"
+
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_custom_roundedcorner10"
+            android:gravity="right"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make Request"
+                >
+            </Button>
+        </LinearLayout>
+
+</LinearLayout>

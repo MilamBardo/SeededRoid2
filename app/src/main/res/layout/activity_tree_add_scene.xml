@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.talanath.seededroid2.TreeAddSceneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layTreeScene"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/laySelectSeed"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_custom_roundedcorner10"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:id="@+id/txtLabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Select Garden:"
+                    >
+                </TextView>
+                <Spinner
+                    android:id="@+id/spinGardens"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/laySeedGrid"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_custom"
+                    >
+
+                    <GridView
+                        android:id="@+id/grdSeeds"
+                        android:numColumns="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        >
+
+                    </GridView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/laySeedDisplay"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_custom"
+                    >
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/layScene"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_custom_roundedcorner10"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            >
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:text="Scene"-->
+                    <!--&gt;-->
+                <!--</TextView>-->
+            <!--</LinearLayout>-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:id="@+id/laySceneView"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/laySceneVisual"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/txtVis"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Drag Image"
+                        >
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/imgDropImage"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_custom_roundedcorner10"
+
+                        >
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/laySceneText"
+                    android:orientation="vertical"
+
+                    android:padding="20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtTxt"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Drag Text"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/txtDropText"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/border_custom_roundedcorner10"
+
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Duration:"
+                    >
+                </TextView>
+                <SeekBar
+                    android:id="@+id/seekTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="10"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTimeValue"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layTypeDuration"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="left"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:id="@+id/txt1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Type Duration" />-->
+                <!--<EditText-->
+                    <!--android:id="@+id/txtDuration"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Back"
+                    />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Next"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

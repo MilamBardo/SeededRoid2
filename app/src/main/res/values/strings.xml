@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SeededRoid2</string>
+    <string name="title_activity_garden">GardenActivity</string>
+    <string name="title_activity_content">ContentActivity</string>
+    <string name="title_activity_garden_seeds">GardenSeedsActivity</string>
+    <string name="take_picture">Take picture</string>
+</resources>

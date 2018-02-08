@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.talanath.seededroid2.HomeActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="New Trees"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNewSeed"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="26dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/seed" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabViewGardens"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="19dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fabNewSeed"
+        app:srcCompat="@drawable/garden" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabViewTrees"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="19dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fabViewGardens"
+        app:srcCompat="@drawable/tree_icon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabViewMySeeds"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="19dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fabViewTrees"
+        app:srcCompat="@drawable/myseeds" />
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
